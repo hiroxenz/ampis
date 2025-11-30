@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "backend/app.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "backend/app.py" }
+  ],
+  "env": {
+    "MONGO_URI": "@MONGO_URI",
+    "JWT_SECRET": "@JWT_SECRET",
+    "ADMIN_SECRET": "@ADMIN_SECRET",
+    "RATE_LIMIT": "@RATE_LIMIT"
+  }
+}
