@@ -1,1 +1,6 @@
-requirements.txt
+flask
+pymongo
+flask-bcrypt
+pyjwt
+flask-limiter
+dnspython
